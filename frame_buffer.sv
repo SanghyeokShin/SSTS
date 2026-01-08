@@ -22,7 +22,6 @@ module frame_buffer(
         if (we) mem[wAddr] <= wData;
     end
 
-
     // read side
     always_ff @( posedge rclk) begin
         if (oe) rData <= mem[rAddr];
